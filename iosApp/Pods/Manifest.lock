@@ -1,0 +1,21 @@
+PODS:
+  - data (1.0.0-SNAPSHOT)
+  - domain (1.0.0-SNAPSHOT)
+
+DEPENDENCIES:
+  - data (from `../data`)
+  - domain (from `../domain`)
+
+EXTERNAL SOURCES:
+  data:
+    :path: "../data"
+  domain:
+    :path: "../domain"
+
+SPEC CHECKSUMS:
+  data: 71d55135f3c1d249d101c96e060b416a932ec53e
+  domain: d739918af5c67a93e1e1f2012d83cc86668f0a6d
+
+PODFILE CHECKSUM: c897d648344c2ab7f03dc21170b3b6848dd119ff
+
+COCOAPODS: 1.11.3

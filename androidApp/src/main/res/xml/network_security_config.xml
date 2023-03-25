@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+
+    <domain-config>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <trust-anchors>
+            <certificates src="@raw/server_dev" />
+            <certificates src="@raw/charles_ssl_proxying_certificate" />
+        </trust-anchors>
+    </domain-config>
+
+    <domain-config>
+        <domain includeSubdomains="true">int.api.sample.app</domain>
+        <trust-anchors>
+            <certificates src="@raw/charles_ssl_proxying_certificate" />
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

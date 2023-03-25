@@ -1,0 +1,6 @@
+target 'iosApp' do
+  use_frameworks!
+  platform :ios, '14.2'
+  pod 'data', :path => '../data'
+  pod 'domain', :path => '../domain'
+end
